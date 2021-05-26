@@ -1,0 +1,42 @@
+.right-side-toggle i {
+    -webkit-transition-property: none;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: none;
+    -moz-transition-duration: 1s;
+    transition-property: none;
+    -o-transition-property: none;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-animation-name: none;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: unset;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: none;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: unset;
+    -moz-animation-timing-function: linear;
+    animation-name: none;
+    animation-duration: 2s;
+    animation-iteration-count: unset;
+    animation-timing-function: linear;
+    position: absolute;
+    top: 18px;
+    left: 18px
+}
+
+input[type=text],
+input[type=number],
+input[type=time],
+input[type=date],
+textarea.form-control {
+    text-transform: uppercase;
+}
+
+input[type=url],
+input[type=email] {
+    text-transform: lowercase;
+}
+
+.login-register {
+    background-image:url('/assets/images/background/login-register.jpg');
+}

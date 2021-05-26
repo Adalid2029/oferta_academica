@@ -1,0 +1,296 @@
+CRITICAL - 2021-05-11 10:54:34 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 10:55:10 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 10:57:44 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 10:57:50 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 11:00:53 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 11:02:11 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 11:02:41 --> syntax error, unexpected '?>'
+#0 C:\xampp\htdocs\psg_oferta\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\psg_oferta\system\Common.php(1217): CodeIgniter\View\View->render('layout_admin/me...', Array, true)
+#2 C:\xampp\htdocs\psg_oferta\app\Libraries\Templater.php(50): view('layout_admin/me...', Array)
+#3 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(35): App\Libraries\Templater->view_admin('layout_admin/me...', Array)
+#4 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->crear_publicacion()
+#5 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#6 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-11 11:03:01 --> syntax error, unexpected '?>'
+#0 C:\xampp\htdocs\psg_oferta\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\psg_oferta\system\Common.php(1217): CodeIgniter\View\View->render('layout_admin/me...', Array, true)
+#2 C:\xampp\htdocs\psg_oferta\app\Libraries\Templater.php(50): view('layout_admin/me...', Array)
+#3 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(35): App\Libraries\Templater->view_admin('layout_admin/me...', Array)
+#4 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->crear_publicacion()
+#5 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#6 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-11 11:03:31 --> syntax error, unexpected '?>'
+#0 C:\xampp\htdocs\psg_oferta\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\psg_oferta\system\Common.php(1217): CodeIgniter\View\View->render('layout_admin/me...', Array, true)
+#2 C:\xampp\htdocs\psg_oferta\app\Libraries\Templater.php(50): view('layout_admin/me...', Array)
+#3 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(35): App\Libraries\Templater->view_admin('layout_admin/me...', Array)
+#4 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->crear_publicacion()
+#5 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#6 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-11 11:31:58 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 12:04:02 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 12:05:02 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 12:08:13 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 12:12:27 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 12:13:17 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 12:16:13 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 12:16:49 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 12:24:04 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 12:26:17 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 12:26:52 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 12:27:53 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 12:28:06 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 12:30:40 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 12:31:22 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 12:37:58 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 13:16:41 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 72, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 16:17:32 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 72, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 16:17:44 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 72, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 16:19:45 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 72, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 16:20:01 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 72, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 16:20:08 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 72, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 16:20:14 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 72, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 16:21:23 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 72, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 16:21:29 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 72, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 16:24:19 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 72, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 16:24:54 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 72, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 16:25:39 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 72, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 16:25:57 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 72, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 16:29:11 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 69, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 20:56:00 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 69, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-11 20:56:22 --> Undefined variable: publicacion_model
+#0 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 69, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->guardar_publicacion()
+#2 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#3 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
