@@ -30,7 +30,7 @@ class BaseController extends Controller
 	 */
 	// protected $helpers = [];
 	protected $helpers = ['Psg', 'url'];
-
+	protected $db = null;
 	/**
 	 * Constructor.
 	 *
@@ -48,7 +48,7 @@ class BaseController extends Controller
 	{
 		// Do Not Edit This Line
 		parent::initController($request, $response, $logger);
-
+		$this->db = \Config\Database::connect();
 		//--------------------------------------------------------------------
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------
