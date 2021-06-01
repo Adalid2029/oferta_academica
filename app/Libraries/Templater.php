@@ -45,7 +45,6 @@ class Templater extends BaseController
 
     function view_admin($content, $data = array(), $base = "layout_admin/layout_admin_base")
     {
-
         if ($this->request->isAJAX()) {
             $ajax = view($content, $data);
             return css_tag($content) . $ajax . script_tag($content);
@@ -54,34 +53,20 @@ class Templater extends BaseController
             $data['menu'] = view('layout_admin/component/menu', $data);
             $data['header'] = view('layout_admin/component/header', $data);
             $data['footer'] = view('layout_admin/component/footer', $data);
-
-
-
-
             $data['content'] = view($content, $data);
             return view($base, $data);
         }
     }
 
-    
+
     function view_form($content, $data = array(), $base = "layout_admin/layout_admin_form")
     {
-
         if ($this->request->isAJAX()) {
             $ajax = view($content, $data);
             return css_tag($content) . $ajax . script_tag($content);
         } else {
-
-         
-
-
-
-
             $data['content'] = view($content, $data);
             return view($base, $data);
         }
     }
-
-    
-  
 }

@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Querys;
+use App\Models\Consultas;
 
 if (!function_exists('css_tag')) {
     function css_tag($src = '', $type = 'text/css')
@@ -47,3 +47,75 @@ if (!function_exists('script_tag')) {
         return $script;
     }
 }
+if (!function_exists('mes_literal')) {
+    function mes_literal($mes = 0)
+    {
+        switch (intval($mes)) {
+            case 1:
+                return 'ENERO';
+                break;
+            case 2:
+                return 'FEBRERO';
+                break;
+            case 3:
+                return 'MARZO';
+                break;
+            case 4:
+                return 'ABRIL';
+                break;
+            case 5:
+                return 'MAYO';
+                break;
+            case 6:
+                return 'JUNIO';
+                break;
+            case 7:
+                return 'JULIO';
+                break;
+            case 8:
+                return 'AGOSTO';
+                break;
+            case 9:
+                return 'SEPTIEMBRE';
+                break;
+            case 10:
+                return 'OCTUBRE';
+                break;
+            case 11:
+                return 'NOVIEMBRE';
+                break;
+            case 12:
+                return 'DICIEMBRE';
+                break;
+            default:
+                return '';
+                break;
+        }
+    }
+}
+// if (!function_exists('insertar_tabla')) {
+//     function insertar_tabla($tabla = null, $datos = null)
+//     {
+//         $CI = &get_instance();
+//         return ($CI->db->insert($tabla, $datos)) ? $CI->db->insert_id() : $CI->db->error();
+//     }
+// }
+
+if (!function_exists('seleccionar_tabla')) {
+}
+
+// if (!function_exists('actualizar_tabla')) {
+//     function actualizar_tabla($tabla = null, $datos = null, $condicion = null)
+//     {
+//         $CI = &get_instance();
+//         return ($CI->db->update($tabla, $datos, $condicion)) ? true : $CI->db->error;
+//     }
+// }
+
+// if (!function_exists('eliminar_tabla')) {
+//     function eliminar_tabla($tabla = null, $condicion = null)
+//     {
+//         $CI = &get_instance();
+//         return ($CI->db->delete($tabla, $condicion)) ? true : $CI->db->error;
+//     }
+// }

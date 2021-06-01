@@ -46,9 +46,9 @@
     <link href="<?= base_url('theme/icon/favicon.png') ?>" rel="shortcut icon">
 
 
-        <meta property="og:type" content="website">
-        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/es/img/apple-touch-icon@2.png?v=62634cce9d6c">
-        <meta property="og:url" content="https://es.stackoverflow.com/questions/66388/poner-una-imagen-de-preview-y-titulo-en-mi-pagina-para-que-se-visualice-en-face">
+    <meta property="og:type" content="website">
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/es/img/apple-touch-icon@2.png?v=62634cce9d6c">
+    <meta property="og:url" content="https://es.stackoverflow.com/questions/66388/poner-una-imagen-de-preview-y-titulo-en-mi-pagina-para-que-se-visualice-en-face">
     <!--[if lt IE 9]>
         <script src="javascript/html5shiv.js"></script>
         <script src="javascript/respond.min.js"></script>
@@ -58,7 +58,7 @@
 <body class="header-sticky">
 
     <div class="boxed">
-        <!-- <div class="windows8">
+        <div class="windows8">
             <div class="preload-inner">
                 <div class="wBall" id="wBall_1">
                     <div class="wInnerBall"></div>
@@ -76,7 +76,7 @@
                     <div class="wInnerBall"></div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- PONER HEADER -->
 
         <!-- PONER MENU -->

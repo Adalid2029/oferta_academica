@@ -56,7 +56,7 @@ $routes->get('/actividades2', 'Home::actividades2', ['as' => 'actividades2']);
 
 //formulario de inscripcion
 
-$routes->get('/inscripcion', 'Principal::inscripcion', ['as' => 'inscripcion']);
+
 
 //admin
 $routes->get('/admin', 'Principal::index', ['as' => 'inicio_admin']);
@@ -72,6 +72,9 @@ $routes->get('/inscritos', 'InscritosController::index', ['as' => 'inscritos.ind
 //oferta academica
 
 $routes->get('/publicaciones', 'OfertasController::index', ['as' => 'publicaciones.index']);
+
+$routes->get('inscripcion/(:num)/(:any)', 'Inscripcion::formulario/$1/$2', ['as' => 'inscripcion.formulario']);
+$routes->get('inscripcion/(:num)', 'Inscripcion::formulario/$1', ['as' => 'inscripcion.formulario.carnet']);
 
 //PARA AGREGAR NUEVOS PROGRAMAS
 //PUBLICACIONES
