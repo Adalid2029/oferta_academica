@@ -8,7 +8,6 @@ use App\Models\Consultas;
 class Inscripcion extends BaseController
 
 {
-
 	public function formulario($id_publicacion, $carnet = null)
 	{
 		$this->data['publicacion_detalle'] =  (new Consultas)->seleccionar_tabla('publicacion', ['id_publicacion' => $id_publicacion])->getRowArray();

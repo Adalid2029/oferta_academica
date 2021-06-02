@@ -32,7 +32,7 @@ class Database extends Config
 	 */
 	public $default = [
 		'DSN'      => '',
-		'hostname' => '192.168.42.129',
+		'hostname' => 'localhost',
 		'username' => 'postgres',
 		'password' => 'postgres',
 		'database' => 'db_pagina_web',

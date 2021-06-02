@@ -2,14 +2,9 @@
 <!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
-<!--<![endif]-->
-
-<!-- Mirrored from themesflat.com/html/educate/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Apr 2021 23:08:47 GMT -->
 
 <head>
-    <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
     <title>Posgrado - UPEA</title>
 
     <meta name="author" content="themesflat.com">
@@ -53,6 +48,8 @@
         <script src="javascript/html5shiv.js"></script>
         <script src="javascript/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript" src="<?= base_url('theme/javascript/jquery.min.js') ?>"></script>
+
 </head>
 
 <body class="header-sticky">
@@ -131,7 +128,6 @@
 
     <!-- Javascript -->
 
-    <script type="text/javascript" src="<?= base_url('theme/javascript/jquery.min.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('theme/javascript/bootstrap.min.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('theme/javascript/jquery.easing.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('theme/javascript/owl.carousel.js') ?>"></script>
@@ -159,7 +155,5 @@
     <script type="text/javascript" src="<?= base_url('theme/revolution/js/extensions/revolution.extension.video.min.js') ?>"></script>
 
 </body>
-
-<!-- Mirrored from themesflat.com/html/educate/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Apr 2021 23:13:28 GMT -->
 
 </html>
