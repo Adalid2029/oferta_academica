@@ -30,7 +30,7 @@
                 <div class="card-body">
                     <h4 class="card-title">Listado de programas</h4>
 
-                    <h6 class="card-subtitle">Add<code>.table-bordered</code>for borders on all sides of the table and cells.</h6>
+
 
 
                     <button id="btnNuevoPublicacion" class="btn btn-primary font-weight-bolder" data-toggle="modal" data-target="#modalPublicacionIndexs">Nueva publicaci&oacute;n</button>
@@ -55,29 +55,26 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>EDUCACIÓN SUPERIOR</td>
-                                    <td>XVI</td>
-                                    <td>VIRTUAL</td>
-                                    <td>DIPLOMADO</td>
-                                    <td>2021</td>
-                                    <td>CENTRAL - EL ALTO</td>
+                                <?php foreach ($programas as $key => $value) : ?>
+                                    <tr>
+                                        <td><?= $value['nombre_programa'] ?></td>
+                                        <td><?= $value['numero_version'] ?></td>
+                                        <td><?= $value['modalidad'] ?></td>
+                                        <td><?= $value['grado_academico'] ?></td>
+                                        <td><?= $value['id_gestion'] ?></td>
+                                        <td><?= $value['sede'] ?></td>
+                                        <td><?= $value['estado_publicacion'] ?></td>
+                                        <td><?= $value['fecha_fin_publicacion'] ?></td>
+                                        <td class="text-nowrap">
+                                            <a href="#" data-toggle="tooltip" data-original-title="Editar" data-id-publicacion="<?= $value['id_publicacion'] ?>"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
+                                            <a href="#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-close text-danger"></i> </a>
+                                            <a href="<?= route_to('programas.detalle') ?>" data-toggle="tooltip" data-original-title="Ver programa"> <i class="fa fa-eye text-eye"></i> </a>
 
-                                    <td>
-                                        <div class="progress progress-xs margin-vertical-10 ">
-                                            <div class="progress-bar bg-danger" style="width: 35%; height:6px;"></div>
-                                        </div>
-                                    </td>
-                                    <td>May 15, 2015</td>
-                                    <td class="text-nowrap">
-                                        <a href="#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
-                                        <a href="#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-close text-danger"></i> </a>
-                                        <a href="<?= route_to('programas.detalle') ?>" data-toggle="tooltip" data-original-title="Ver programa"> <i class="fa fa-eye text-eye"></i> </a>
+                                            <a href=" <?= route_to('inscritos.index') ?>  " data-toggle="tooltip" data-original-title="Ver preinscritos"> <i class="fa fa-user text-user"></i> </a>
 
-                                        <a href=" <?= route_to('inscritos.index') ?>  " data-toggle="tooltip" data-original-title="Ver preinscritos"> <i class="fa fa-user text-user"></i> </a>
-
-                                    </td>
-                                </tr>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
                             </tbody>
                         </table>
                     </div>

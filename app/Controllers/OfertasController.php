@@ -12,7 +12,7 @@ class OfertasController extends BaseController
 {
 	public function index()
 	{
-		$this->data['titulo'] = 'Lista de ofertas académicas';
+		$this->data['programas'] = $this->db->table('publicacion')->orderBy('fecha_fin_publicacion', 'ASC')->get()->getResultArray();
 		return $this->templater->view_admin('layout_admin/menus/publicaciones/index',	$this->data);
 		// var_dump([];)
 	}
