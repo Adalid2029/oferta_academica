@@ -1,0 +1,12 @@
+CRITICAL - 2021-06-03 17:32:38 --> Undefined property: CodeIgniter\View\View::$router
+#0 C:\xampp\htdocs\psg_oferta\app\Views\layout_admin\layout_admin_base.php(150): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 150, Array)
+#1 C:\xampp\htdocs\psg_oferta\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\psg_oferta\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\psg_oferta\system\Common.php(1217): CodeIgniter\View\View->render('layout_admin/la...', Array, true)
+#4 C:\xampp\htdocs\psg_oferta\app\Libraries\Templater.php(46): view('layout_admin/la...', Array)
+#5 C:\xampp\htdocs\psg_oferta\app\Controllers\OfertasController.php(16): App\Libraries\Templater->view_admin('layout_admin/me...', Array)
+#6 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(936): App\Controllers\OfertasController->index()
+#7 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfertasController))
+#8 C:\xampp\htdocs\psg_oferta\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\psg_oferta\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}

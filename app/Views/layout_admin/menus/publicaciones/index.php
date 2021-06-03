@@ -106,5 +106,3 @@
         </div>
     </div>
 </div>
-
-<script src="<?= base_url('assets/js/layout_admin/menus/publicaciones/index.js') ?>"></script>
