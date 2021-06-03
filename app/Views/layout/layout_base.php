@@ -48,8 +48,6 @@
         <script src="javascript/html5shiv.js"></script>
         <script src="javascript/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="<?= base_url('theme/javascript/jquery.min.js') ?>"></script>
-
 </head>
 
 <body class="header-sticky">
@@ -128,6 +126,7 @@
 
     <!-- Javascript -->
 
+    <script type="text/javascript" src="<?= base_url('theme/javascript/jquery.min.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('theme/javascript/bootstrap.min.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('theme/javascript/jquery.easing.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('theme/javascript/owl.carousel.js') ?>"></script>
@@ -153,7 +152,10 @@
     <script type="text/javascript" src="<?= base_url('theme/revolution/js/extensions/revolution.extension.parallax.min.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('theme/revolution/js/extensions/revolution.extension.slideanims.min.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('theme/revolution/js/extensions/revolution.extension.video.min.js') ?>"></script>
-
+    <?php $js = str_replace('\\', '/', FCPATH . 'assets/js/layout/' . strtolower(explode('\\', (\Config\Services::router())->controllerName())[3]) . '/' . (\Config\Services::router())->methodName() . '.js');
+    if (is_file($js)) : ?>
+        <script src="<?php echo base_url('assets/js/layout/' . strtolower(explode('\\', (\Config\Services::router())->controllerName())[3]) . '/' . (\Config\Services::router())->methodName() . '.js'); ?>"></script>
+    <?php endif; ?>
 </body>
 
 </html>
