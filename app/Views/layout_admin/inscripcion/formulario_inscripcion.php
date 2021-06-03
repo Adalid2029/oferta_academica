@@ -1,3 +1,8 @@
+<style>
+    .text-danger {
+        color: red;
+    }
+</style>
 <link rel="stylesheet" href="<?= base_url('theme/stylesheets/viewer.min.css') ?>">
 <div class="boxed">
     <div class="content">
@@ -94,7 +99,6 @@
                                                                                 <div class="col-lg-6 col-xl-6 col-md-12">
                                                                                     <input type="number" name="ci" class="form-control   text-uppercase" maxlength="50" required autocomplete="off" value="9874182" readonly="readonly" style="height: 34px;">
                                                                                 </div>
-
                                                                                 <div class="col-lg-6 col-xl-6 col-md-12">
                                                                                     <button href="<?= route_to('inscripcion.formulario/1') ?>" class="btn" style="height: 34px;">
                                                                                         <i class="fa fa-refresh"></i> Reiniciar
@@ -140,62 +144,36 @@
                                                             <div class="row">
                                                                 <!--/ bloque carnet anverso -->
                                                                 <div class="col-lg-6 col-xl-6 col-md-12" style="display: block;margin: auto;">
-                                                                    <div class="view_img_left">
-                                                                        <!--/sector imagen  -->
-                                                                        <div class="view__img">
-                                                                            <img src="<?= base_url('assets/img/add_img.jpg') ?>" alt="" id="mostrar_img_ci_delante" name="mostrar_img_ci_delante" onclick="document.getElementById('img_ci_delante').click()" style="cursor: pointer; width:100%;">
-                                                                        </div>
-                                                                        <!--/ sector de input file  -->
-                                                                        <div class="view_img_right">
-                                                                            <!-- <label class="control-label">Saque una Foto o Imagen de la cara de su Carnet <span class="text-danger"> *</span></label> -->
-                                                                            <p>Toma una Fotograf&iacute;a o carga una imagen del lado anverso de tu carnet de identidad.</p>
-
-
-                                                                            <div class="form-group">
-                                                                                <button type="button" class="btn btn-block" onclick="document.getElementById('img_ci_delante').click()" style="height: 34px;"><i class="fa fa-upload"> </i> Cargar lado ANVERSO</button>
-
-                                                                                <div class="controls custom-file" id="ci_delante" style="display: none;">
-                                                                                    <input type="file" class="custom-file-input " id="img_ci_delante" name="img_ci_delante" required>
-                                                                                    <label id="label_img_name_ci_delante" class="custom-file-label form-control" for="img_ci_delante"></label>
-                                                                                </div>
+                                                                    <img src="<?= base_url('assets/img/add_img.jpg') ?>" alt="" id="mostrar_img_ci_delante" name="mostrar_img_ci_delante" onclick="document.getElementById('img_ci_delante').click()" style="cursor: pointer; width:100%;">
+                                                                    <!--/ sector de input file  -->
+                                                                    <div class="view_img_right">
+                                                                        <!-- <label class="control-label">Saque una Foto o Imagen de la cara de su Carnet <span class="text-danger"> *</span></label> -->
+                                                                        <p>Toma una Fotograf&iacute;a o carga una imagen del lado anverso de tu carnet de identidad.</p>
+                                                                        <div class="form-group">
+                                                                            <button type="button" class="btn btn-block" onclick="document.getElementById('img_ci_delante').click()" style="height: 34px;"><i class="fa fa-upload"> </i> Cargar lado ANVERSO</button>
+                                                                            <div class="controls custom-file" id="ci_delante" style="display: none;">
+                                                                                <input type="file" class="custom-file-input " id="img_ci_delante" name="img_ci_delante" required>
+                                                                                <label id="label_img_name_ci_delante" class="custom-file-label form-control" for="img_ci_delante"></label>
                                                                             </div>
-
                                                                         </div>
-
-
                                                                     </div>
                                                                 </div>
 
                                                                 <!--/ bloque carnet reverso -->
                                                                 <div class="col-lg-6 col-xl-6 col-md-12" style="display: block;margin: auto;">
-                                                                    <div class="view_img_left">
-                                                                        <!--/sector imagen  -->
-                                                                        <div class="view__img">
+                                                                    <img src="<?= base_url('assets/img/add_img.jpg') ?>" alt="" id="mostrar_img_ci_atras" name="mostrar_img_ci_atras" onclick="document.getElementById('img_ci_atras').click()" style="cursor: pointer; width:100%;">
+                                                                    <!-- <label class="control-label">Saque una foto o suba una Imagen de la parte de atras de su carnet <span class="text-danger"> *</span></label> -->
+                                                                    <p>Toma una Fotograf&iacute;a o carga una imagen del lado reverso de tu carnet de identidad.</p>
+                                                                    <div class="form-group">
+                                                                        <button type="button" class="btn btn-block" onclick="document.getElementById('img_ci_atras').click()" style="height: 34px;"><i class="fa fa-upload"> </i> Cargar lado REVERSO</button>
 
-                                                                            <img src="<?= base_url('assets/img/add_img.jpg') ?>" alt="" id="mostrar_img_ci_atras" name="mostrar_img_ci_atras" onclick="document.getElementById('img_ci_atras').click()" style="cursor: pointer; width:100%;">
-
+                                                                        <div class="controls custom-file" id="ci_atras" style="display: none;">
+                                                                            <input type="file" class="custom-file-input" id="img_ci_atras" name="img_ci_atras" required>
+                                                                            <label id="label_img_name_ci_atras" class="custom-file-label form-control" for="img_ci_atras"></label>
                                                                         </div>
-
-                                                                        <!--/ sector de input file  -->
-                                                                        <div class="view_img_right">
-                                                                            <!-- <label class="control-label">Saque una foto o suba una Imagen de la parte de atras de su carnet <span class="text-danger"> *</span></label> -->
-                                                                            <p>Toma una Fotograf&iacute;a o carga una imagen del lado reverso de tu carnet de identidad.</p>
-
-                                                                            <div class="form-group">
-                                                                                <button type="button" class="btn btn-block" onclick="document.getElementById('img_ci_atras').click()" style="height: 34px;"><i class="fa fa-upload"> </i> Cargar lado REVERSO</button>
-
-                                                                                <div class="controls custom-file" id="ci_atras" style="display: none;">
-                                                                                    <input type="file" class="custom-file-input" id="img_ci_atras" name="img_ci_atras" required>
-                                                                                    <label id="label_img_name_ci_atras" class="custom-file-label form-control" for="img_ci_atras"></label>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <!-- FIN RESPALDOS CARNET -->
 
                                                             <hr>
                                                             <h4 class="card-title">DATOS PERSONALES</h4>
