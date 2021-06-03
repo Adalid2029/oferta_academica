@@ -43,7 +43,7 @@ class Templater extends BaseController
             $data['header'] = view('layout_admin/component/header', $data);
             $data['footer'] = view('layout_admin/component/footer', $data);
             $data['content'] = view($content, $data);
-            view($base, $data);
+            return view($base, $data);
         }
     }
 
