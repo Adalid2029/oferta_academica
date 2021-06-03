@@ -13,6 +13,7 @@ class Inscripcion extends BaseController
 		$this->data['publicacion_detalle'] =  (new Consultas)->seleccionar_tabla('publicacion', ['id_publicacion' => $id_publicacion])->getRowArray();
 		$this->data['publicacion_multimedia'] =  (new Consultas)->seleccionar_tabla('respaldo_multimedia', ['id_publicacion' => $id_publicacion])->getRowArray();
 		return $this->templater->view('layout_admin/inscripcion/formulario_carnet', $this->data);
+		//hola
 	}
 	public function formulario_carnet($id_publicacion, $carnet = null)
 	{
