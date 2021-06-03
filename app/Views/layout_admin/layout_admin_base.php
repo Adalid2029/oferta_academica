@@ -147,7 +147,7 @@
     <!-- ============================================================== -->
     <script src="<?= base_url('theme_admin/assets/plugins/styleswitcher/jQuery.style.switcher.js') ?>"></script>
     <script src="<?= base_url('assets/js/psg_oferta.js') ?>"></script>
-
+    <!-- hol -->
     <?php $js = str_replace('\\', '/', FCPATH . 'assets/js/layout_admin/' . strtolower(explode('\\', (\Config\Services::router())->controllerName())[3]) . '/' . (\Config\Services::router())->methodName() . '.js');
     if (is_file($js)) : ?>
         <script src="<?php echo base_url('assets/js/layout_admin/' . strtolower(explode('\\', (\Config\Services::router())->controllerName())[3]) . '/' . (\Config\Services::router())->methodName() . '.js'); ?>"></script>
