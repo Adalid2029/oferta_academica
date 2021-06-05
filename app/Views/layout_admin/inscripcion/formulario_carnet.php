@@ -7,16 +7,16 @@
                     <div class="col-md-12">
                         <div class="page-title-heading">
                             <h2 class="title">INSCRIPCIÓN</h2>
-                        </div><!-- /.page-title-heading -->
+                        </div>
                         <div class="breadcrumbs">
                             <ul>
                                 <li><a href="<?= base_url() ?>">POSGRADO</a></li>
                                 <li><?= $publicacion_detalle['nombre_programa'] ?></li>
                             </ul>
-                        </div><!-- /.breadcrumbs -->
-                    </div><!-- /.col-md-12 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <section class="main-content blog-posts blog-grid have-sidebar">
             <div class="container">
@@ -42,10 +42,9 @@
                                             <h3 class="text-white box m-b-0"><i class="ti-wallet"></i></h3>
                                         </div>
                                         <div class="align-self-center m-l-20">
-                                            <h3 class="m-b-0 text-info">Bs. 100 </h3>
+                                            <h3 class="m-b-0 text-info">Bs. <?= $publicacion_detalle['monto_matricula'] ?> </h3>
                                             <h5 class="text-muted m-b-0">Costo Matr&iacute;cula</h5>
                                         </div>
-
                                     </div>
                                 </div>
 
@@ -55,7 +54,7 @@
                                             <h3 class="text-white box m-b-0"><i class="ti-wallet"></i></h3>
                                         </div>
                                         <div class="align-self-center m-l-20">
-                                            <h3 class="m-b-0 text-info">Bs. 200 </h3>
+                                            <h3 class="m-b-0 text-info">Bs. <?= $publicacion_detalle['precio_programa'] ?> </h3>
                                             <h5 class="text-muted m-b-0">Costo Colegiatura</h5>
                                         </div>
                                     </div>
@@ -67,7 +66,7 @@
                                 <div class="tab-pane active " id="formulario_preinscripcion" role="tabpanel">
                                     <div class="card">
                                         <div class="card-body" oncopy="return false" onpaste="return false">
-                                            <form method="post">
+                                            <form method="post" id="form-verificar-carnet">
                                                 <h3 class="card-title text-center">ESCRIBE TU NÚMERO DE CARNET</h3>
                                                 <hr>
                                                 <div class="d-flex justify-content-center">
@@ -78,7 +77,8 @@
                                                                 <div class="controls">
                                                                     <div class="row">
                                                                         <div class="col-lg-6 col-xl-6 col-md-12">
-                                                                            <input type="text" name="ci" class="form-control form-control-sm ci-inputmask text-uppercase" maxlength="15" minlength="5" required data-validation-required-message="Este campo es requerido" data-validation-maxlength-message="Demasiado largo: Máximo de '15' caracteres" data-validation-minlength-message="Demasiado corto: Minimo de '5' caracteres" autocomplete="off" style="height: 34px;">
+                                                                            <input type="hidden" name="id_publicacion" value="<?= $publicacion_detalle['id_publicacion'] ?>">
+                                                                            <input type="text" name="ci" class="form-control ci-inputmask" autocomplete="off" value="9874181" style="height: 34px;">
                                                                         </div>
                                                                         <div class="col-lg-6 col-xl-6 col-md-12">
                                                                             <button type="submit" id="verificar_carnet" class="btn" style="height: 34px;"><i class="fa fa-pencil"></i> Inscribirme</button>
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-            </div><!-- /row -->
+            </div>
         </section>
     </div>
 </div>

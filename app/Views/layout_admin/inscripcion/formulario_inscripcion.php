@@ -3,7 +3,6 @@
         color: red;
     }
 </style>
-<link rel="stylesheet" href="<?= base_url('theme/stylesheets/viewer.min.css') ?>">
 <div class="boxed">
     <div class="content">
         <div class="page-title parallax parallax4" style="background-position: 50% 59px;">
@@ -54,7 +53,7 @@
                                             <h3 class="text-white box m-b-0"><i class="ti-wallet"></i></h3>
                                         </div>
                                         <div class="align-self-center m-l-20">
-                                            <h3 class="m-b-0 text-info">Bs. 100 </h3>
+                                            <h3 class="m-b-0 text-info">Bs. <?= $publicacion_detalle['monto_matricula'] ?> </h3>
                                             <h5 class="text-muted m-b-0">Costo Matr&iacute;cula</h5>
                                         </div>
                                     </div>
@@ -66,7 +65,7 @@
                                             <h3 class="text-white box m-b-0"><i class="ti-wallet"></i></h3>
                                         </div>
                                         <div class="align-self-center m-l-20">
-                                            <h3 class="m-b-0 text-info">Bs. 200 </h3>
+                                            <h3 class="m-b-0 text-info">Bs. <?= $publicacion_detalle['precio_programa'] ?> </h3>
                                             <h5 class="text-muted m-b-0">Costo Colegiatura</h5>
                                         </div>
                                     </div>
@@ -296,22 +295,8 @@
 
                                                             <!--/row-->
                                                             <div class="row">
-                                                                <!--/input lugar de nacimiento-->
-                                                                <div class=" col-lg-8 col-xl-8 col-md-12">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Lugar de Nacimiento (Como indica su Carnet) <span class="text-danger"> *</span></label>
-                                                                        <div class="controls">
-                                                                            <div class="controls">
-                                                                                <input type="text" name="lugar_nacimiento" id="lugar_nacimiento" class="form-control   text-uppercase" maxlength="50" required value="<?php if (!empty($datos_persona[0]['lugar_nacimiento'])) echo $datos_persona[0]['lugar_nacimiento']; ?>" style="height: 34px;">
-                                                                            </div>
-
-
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
                                                                 <!--/input cuidad donde vive-->
-                                                                <div class=" col-lg-4 col-xl-4 col-md-12">
+                                                                <div class="col-lg-4 col-xl-4 col-md-12">
                                                                     <div class="form-group">
                                                                         <label class="control-label">Ciudad donde vive<span class="text-danger"> *</span></label>
                                                                         <div class="controls">
@@ -322,13 +307,22 @@
                                                                                         <option value="<?= $key ?>" <?= $datos_persona[0]['ciudad_donde_vive'] == $key ? 'selected' : ''; ?>><?= $ciudad_interesado ?></option>
                                                                                     <?php endforeach; ?>
                                                                                 <?php endif; ?>
-
-
-
                                                                             </select>
                                                                             <div class="help-block"></div>
                                                                         </div>
 
+                                                                    </div>
+                                                                </div>
+                                                                <!--/input lugar donde vive-->
+                                                                <div class="col-lg-8 col-xl-8 col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Dirección donde vive <span class="text-danger"> *</span></label>
+                                                                        <div class="controls">
+
+                                                                            <div class="controls">
+                                                                                <input type="text" name="domicilio" id="domicilio" class="form-control  text-uppercase" maxlength="50" required value="<?php if (!empty($datos_persona[0]['domicilio'])) echo $datos_persona[0]['domicilio']; ?>" style="height: 34px;">
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                                 <!--/span-->
@@ -337,37 +331,9 @@
 
                                                             <!--/row-->
                                                             <div class="row">
-                                                                <!--/input lugar donde vive-->
-                                                                <div class="col-md-12">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Dirección donde vive <span class="text-danger"> *</span></label>
-                                                                        <div class="controls">
 
-                                                                            <div class="controls">
-                                                                                <input type="text" name="domicilio" id="domicilio" class="form-control  text-uppercase" maxlength="50" required value="<?php if (!empty($datos_persona[0]['domicilio'])) echo $datos_persona[0]['domicilio']; ?>" style="height: 34px;">
-                                                                            </div>
-
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
                                                             </div>
                                                             <div class="row">
-                                                                <div class="col-lg-3 col-xl-3 col-md-12">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Nacionalidad<span class="text-danger"> *</span></label>
-                                                                        <div class="controls">
-                                                                            <select name="id_pais_nacionalidad" id="id_pais_nacionalidad" required class="form-control  text-uppercase">
-                                                                                <?php foreach ($paises as $key => $value) : ?>
-                                                                                    <option value="<?= $value['id_pais'] ?>"><?= $value['nombre_pais'] ?></option>
-                                                                                <?php endforeach; ?>
-                                                                            </select>
-                                                                            <div class="help-block"></div>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-
                                                                 <!--/input estado civil-->
                                                                 <div class="col-lg-3 col-xl-3 col-md-12 ">
                                                                     <div class="form-group">
@@ -424,18 +390,6 @@
                                                                     </div>
 
                                                                 </div>
-
-                                                                <!--/input telefono-->
-                                                                <div class=" col-lg-3 col-xl-3 col-md-6">
-                                                                    <div class="form-group ">
-                                                                        <label class="control-label">Teléfono (Opcional)</label>
-                                                                        <div class="controls">
-                                                                            <input type="text" name="telefono" id="telefono" class="form-control  telefono-inputmask text-uppercase" maxlength="50" data-validation-maxlength-message="Demasiado largo: Máximo de '10' caracteres" autocomplete="off" value="<?php if (!empty($datos_persona[0]['telefono'])) echo $datos_persona[0]['telefono']; ?>" style="height: 34px;">
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-
                                                                 <!--/input correo electronico-->
                                                                 <div class="col-lg-6 col-xl-6 col-md-12">
                                                                     <div class="form-group ">
@@ -667,46 +621,3 @@
         </div>
     </div>
 </div>
-<script src="<?= base_url('theme/javascript/viewer.min.js') ?>"></script>
-<script>
-    $(document).ready(function() {
-        $('form').on('submit', function(e) {
-            e.preventDefault();
-            alert();
-        });
-    });
-    // window.addEventListener('DOMContentLoaded', function() {
-    //     var galley = document.getElementById('galley');
-    //     var viewer = new Viewer(galley, {
-    //         url: 'data-original',
-    //         toolbar: {
-    //             oneToOne: true,
-    //             prev: function() {
-    //                 viewer.prev(true);
-    //             },
-    //             play: true,
-    //             next: function() {
-    //                 viewer.next(true);
-    //             },
-    //             download: function() {
-    //                 const a = document.createElement('a');
-    //                 a.href = viewer.image.src;
-    //                 a.download = viewer.image.alt;
-    //                 document.body.appendChild(a);
-    //                 a.click();
-    //                 document.body.removeChild(a);
-    //             },
-    //         },
-    //     });
-    // });
-    window.addEventListener('DOMContentLoaded', function() {
-        var galley = document.getElementById('galley');
-        var viewer = new Viewer(galley, {
-            url: 'data-original',
-            title: function(image) {
-                return image.alt + ' (' + (this.index + 1) + '/' + this.length + ')';
-            },
-            zIndex: 9999999
-        });
-    });
-</script>

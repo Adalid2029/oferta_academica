@@ -73,8 +73,9 @@ $routes->get('/inscritos', 'InscritosController::index', ['as' => 'inscritos.ind
 
 $routes->get('/publicaciones', 'OfertasController::index', ['as' => 'publicaciones.index']);
 
-$routes->get('inscripcion/(:num)/(:any)', 'Inscripcion::formulario/$1/$2', ['as' => 'inscripcion.formulario']);
-$routes->get('inscripcion/(:num)', 'Inscripcion::formulario/$1', ['as' => 'inscripcion.formulario.carnet']);
+$routes->get('inscripcion/(:num)/(:any)', 'Inscripcion::formulario_inscripcion/$1/$2', ['as' => 'inscripcion.formulario.inscripcion']);
+// $routes->match(['post'], 'inscripcion/(:num)/(:any)', 'Inscripcion::formulario_inscripcion/$1/$2', ['as' => 'inscripcion.formulario.inscripcion']);
+$routes->get('inscripcion/(:num)', 'Inscripcion::formulario_carnet/$1', ['as' => 'inscripcion.formulario.carnet']);
 
 //PARA AGREGAR NUEVOS PROGRAMAS
 //PUBLICACIONES

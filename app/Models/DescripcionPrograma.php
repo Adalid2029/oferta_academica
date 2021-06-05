@@ -13,17 +13,9 @@ class DescripcionPrograma extends Model
 	protected $returnType           = 'array';
 	protected $protectFields        = true;
 	protected $allowedFields        = [
-
 		'objetivo',
 		'contenido_minimo',
 		'area_programa',
 		'requisitos_inscripcion',
-
-
 	];
-
-
-
-
-	
 }
