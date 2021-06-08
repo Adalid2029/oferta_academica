@@ -39,6 +39,10 @@
     <link href="<?= base_url('theme/icon/apple-touch-icon-48-precomposed.png') ?>" rel="apple-touch-icon-precomposed" sizes="48x48">
     <link href="<?= base_url('theme/icon/apple-touch-icon-57-precomposed.png') ?>" rel="apple-touch-icon-precomposed" sizes="57x57">
     <link href="<?= base_url('theme/icon/favicon.png') ?>" rel="shortcut icon">
+    <?php $js = str_replace('\\', '/', FCPATH . 'assets/js/layout/' . strtolower(explode('\\', (\Config\Services::router())->controllerName())[3]) . '/' . (\Config\Services::router())->methodName() . '.js');
+    if (is_file($js)) : ?>
+        <script src="<?php echo base_url('assets/js/layout/' . strtolower(explode('\\', (\Config\Services::router())->controllerName())[3]) . '/' . (\Config\Services::router())->methodName() . '.js'); ?>"></script>
+    <?php endif; ?>
     <link rel="stylesheet" href="<?= base_url('theme_admin/assets/plugins/sweetalert/sweetalert.css') ?>">
     <link rel="stylesheet" href="<?= base_url('theme/stylesheets/viewer.min.css') ?>">
     <link rel="stylesheet" href="<?= base_url('theme_admin/assets/plugins/toast-master/css/jquery.toast.css') ?>">
