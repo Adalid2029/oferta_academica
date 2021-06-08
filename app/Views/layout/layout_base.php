@@ -41,6 +41,8 @@
     <link href="<?= base_url('theme/icon/favicon.png') ?>" rel="shortcut icon">
     <link rel="stylesheet" href="<?= base_url('theme_admin/assets/plugins/sweetalert/sweetalert.css') ?>">
     <link rel="stylesheet" href="<?= base_url('theme/stylesheets/viewer.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('theme_admin/assets/plugins/toast-master/css/jquery.toast.css') ?>">
+
 
 
     <meta property="og:type" content="website">
@@ -159,10 +161,32 @@
     <script type="text/javascript" src="<?= base_url('theme/javascript/validation.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('theme_admin/assets/plugins/sweetalert/sweetalert.min.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('theme/javascript/viewer.min.js') ?>"></script>
+    <script type="text/javascript" src="<?= base_url('theme_admin/assets/plugins/toast-master/js/jquery.toast.js') ?>"></script>
+
+    <script type="text/javascript" src="<?= base_url('theme/javascript/datejs/build/date-es-BO.js') ?>"></script>
     <?php $js = str_replace('\\', '/', FCPATH . 'assets/js/layout/' . strtolower(explode('\\', (\Config\Services::router())->controllerName())[3]) . '/' . (\Config\Services::router())->methodName() . '.js');
     if (is_file($js)) : ?>
         <script src="<?php echo base_url('assets/js/layout/' . strtolower(explode('\\', (\Config\Services::router())->controllerName())[3]) . '/' . (\Config\Services::router())->methodName() . '.js'); ?>"></script>
     <?php endif; ?>
+    <script type="text/javascript">
+        $(function() {
+            "use strict";
+            <?php foreach ((\Config\Services::session())->getFlashdata() as $kmsg => $msg) : ?>
+                $.toast({
+                    icon: `<?php echo ((is_numeric($kmsg) || empty($kmsg)) ? 'error' : $kmsg); ?>`,
+                    heading: `<?php echo ((is_numeric($kmsg) || empty($kmsg)) ? 'ERROR [' . $kmsg . ']' : 'INFORMACIÓN'); ?>`,
+                    text: `<?php echo $msg ?>`,
+                    position: `top-right`,
+                    showHideTransition: `plain`,
+                    allowToastClose: true,
+                    loaderBg: `#FFF`,
+                    hideAfter: 5000,
+                    stack: 5
+                });
+            <?php endforeach; ?>
+        });
+    </script>
+
 </body>
 
 </html>

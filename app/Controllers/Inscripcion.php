@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\Consultas;
+use App\Models\InscripcionModel;
 
 class Inscripcion extends BaseController
 
@@ -13,16 +14,42 @@ class Inscripcion extends BaseController
 		// throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
 		$this->data['publicacion_detalle'] =  (new Consultas)->seleccionar_tabla('publicacion', ['id_publicacion' => $id_publicacion])->getRowArray();
 		$this->data['publicacion_multimedia'] =  (new Consultas)->seleccionar_tabla('respaldo_multimedia', ['id_publicacion' => $id_publicacion])->getRowArray();
+
 		return $this->templater->view('layout_admin/inscripcion/formulario_carnet', $this->data);
 	}
 
 	public function formulario_inscripcion($id_publicacion, $carnet)
 	{
+
 		$this->data['publicacion_detalle'] =  (new Consultas)->seleccionar_tabla('publicacion', ['id_publicacion' => $id_publicacion])->getRowArray();
-		$this->data['publicacion_multimedia'] =  (new Consultas)->seleccionar_tabla('respaldo_multimedia', ['id_publicacion' => $id_publicacion])->getRowArray();
-		$this->data['paises'] = (new Consultas)->seleccionar_tabla('pais')->getResultArray();
-		$this->data['ciudades'] = (new Consultas)->seleccionar_tabla('ciudad')->getResultArray();
-		return $this->templater->view('layout_admin/inscripcion/formulario_inscripcion', $this->data);
+		if ($this->data['publicacion_detalle'] != null) {
+			$this->data['publicacion_multimedia'] =  (new Consultas)->seleccionar_tabla('respaldo_multimedia', ['id_publicacion' => $id_publicacion])->getRowArray();
+			$this->data['paises'] = (new Consultas)->seleccionar_tabla('pais')->getResultArray();
+			$this->data['ciudades'] = (new Consultas)->seleccionar_tabla('ciudad')->getResultArray();
+			$this->data['ci'] = $carnet;
+			$this->data['mensaje'] = [];
+
+			$persona = (new Consultas)->seleccionar_tabla('pagina_web.psg_persona', ['ci' => $carnet])->getRowArray();
+			$persona_posgrado = (new Consultas)->seleccionar_tabla('principal.psg_persona', ['ci' => $carnet])->getRowArray();
+
+			if ($persona != null) {
+				if ($this->verificar_inscripcion($persona['id_persona'], $id_publicacion) != null)
+					$this->data['mensaje'][] = ['esta_inscrito', $persona['nombre'] . ' ' . $persona['paterno'] . ', Usted ya se encuentra inscrito en este programa, Solo puede actualizar los siguientes campos.'];
+				else $this->data['mensaje'][] = ['no_esta_inscrito', $persona['nombre'] . ' ' . $persona['paterno'] . ', Usted ya se encuentra registrado en nuestro sistema, Complete los siguientes campos.'];
+			} elseif ($persona_posgrado != null) {
+				$this->data['mensaje'][] = ['no_esta_inscrito', $persona_posgrado['nombre'] . ' ' . $persona_posgrado['paterno'] . ', Usted ya se encuentra registrado en nuestro sistema, Complete los siguientes campos.'];
+			} else $this->data['mensaje'][] = ['no_existe_persona', 'Por favor complete y verifique detalladamente sus datos personales.'];
+			// Aqui pones un mens\\\aje de alerta 
+			// $session->setFlashdata('success', 'Hola soy alerta de Exito');
+			// $session->setFlashdata('error', 'Hola soy alerta de Error');
+			// $session->setFlashdata('info', 'Hola soy alerta de Informacion');
+			return $this->templater->view('layout_admin/inscripcion/formulario_inscripcion', $this->data);
+		} else throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+	}
+
+	public function verificar_inscripcion($id_persona,  $id_publicacion)
+	{
+		return (new InscripcionModel)->inscripcion(['p.id_publicacion' => $id_publicacion, 'id_persona_interesado' => $id_persona])->getRowArray();
 	}
 
 	public function verificar_identidad()

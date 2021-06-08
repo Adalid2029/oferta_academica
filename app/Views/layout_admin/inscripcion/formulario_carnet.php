@@ -26,7 +26,9 @@
                             <div class="efecto_sticky">
                                 <div class="card">
                                     <a href="<?= route_to('inscripcion.formulario/1') ?>" style="cursor:pointer" target="_blank">
-                                        <img class="card-img-top img-responsive" src="<?= base_url($publicacion_multimedia['url']) ?>" alt="Card image cap">
+                                        <?php if (isset($publicacion_multimedia['url'])) : ?>
+                                            <img data-original="<?= base_url($publicacion_multimedia['url']) ?>" id="imagen-publicacion" class="card-img-top img-responsive" src="<?= base_url($publicacion_multimedia['url']) ?>" alt="Card image cap">
+                                        <?php endif ?>
                                     </a>
                                     <div class="card-body text-center">
                                         <center>
