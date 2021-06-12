@@ -1,0 +1,22 @@
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.label-multimedia {
+	width: 100%;
+}
+.i-multimedia {
+	font-size: 30px;
+}
+
+.p-multimedia {
+	margin-bottom: 0px;
+}
+.h4 {
+	margin-bottom: 0;
+	font-weight: bold;
+}
