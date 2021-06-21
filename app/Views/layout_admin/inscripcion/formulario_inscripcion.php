@@ -30,7 +30,7 @@
                         <div class="col-lg-4 col-xlg-3 col-md-5">
                             <div class="card">
                                 <a href="javascript:void(0);" style="cursor:pointer">
-                                    <div id="galley">
+                                    <div id="imagen-programa">
                                         <ul class="pictures">
                                             <li>
                                                 <?php if (isset($publicacion_multimedia['url'])) : ?>
@@ -112,7 +112,7 @@
                                                 <div class="form-group ">
                                                     <label class="control-label">Expedido En<span class="text-danger"> *</span></label>
                                                     <div class="controls">
-                                                        <select name="expedido" required class="form-control text-uppercase">
+                                                        <select name="expedido" required class="form-control">
                                                             <?php foreach (['LP', 'CH', 'CB', 'OR', 'PT', 'TJ', 'SC', 'BE', 'PD'] as $key => $value) : ?>
                                                                 <option value="<?= $value ?>" <?= isset($inscripcion['expedido']) ? ($inscripcion['expedido'] == $value ?  'selected' : '') : ''; ?>><?= $value ?></option>
                                                             <?php endforeach ?>
@@ -166,7 +166,7 @@
                                                 <div class="form-group">
                                                     <label class="control-label">Nombre(s)<span class="text-danger"> *</span></label>
                                                     <div class="controls">
-                                                        <input type="text" name="nombre" id="nombre" class="form-control text-uppercase" maxlength="50" required value="<?= isset($inscripcion['nombre']) ?  $inscripcion['nombre'] : '' ?>" style="height: 34px;">
+                                                        <input type="text" name="nombre" id="nombre" class="form-control" maxlength="50" required value="<?= isset($inscripcion['nombre']) ?  $inscripcion['nombre'] : '' ?>" style="height: 34px;">
                                                     </div>
                                                 </div>
                                             </div>
@@ -176,7 +176,7 @@
                                                 <div class="form-group ">
                                                     <label class="control-label">Paterno<span class="text-danger"> *</span></label>
                                                     <div class="controls">
-                                                        <input type="text" name="paterno" id="paterno" class="form-control   text-uppercase" maxlength="50" required value="<?= isset($inscripcion['paterno']) ?  $inscripcion['paterno'] : '' ?>" style="height: 34px;">
+                                                        <input type="text" name="paterno" id="paterno" class="form-control  " maxlength="50" required value="<?= isset($inscripcion['paterno']) ?  $inscripcion['paterno'] : '' ?>" style="height: 34px;">
                                                     </div>
 
                                                 </div>
@@ -187,7 +187,7 @@
                                                 <div class="form-group ">
                                                     <label class="control-label">Materno<span class="text-danger"> *</span></label>
                                                     <div class="controls">
-                                                        <input type="text" name="materno" id="materno" class="form-control   text-uppercase" maxlength="50" required value="<?= isset($inscripcion['materno']) ?  $inscripcion['materno'] : '' ?>" style="height: 34px;">
+                                                        <input type="text" name="materno" id="materno" class="form-control  " maxlength="50" required value="<?= isset($inscripcion['materno']) ?  $inscripcion['materno'] : '' ?>" style="height: 34px;">
                                                     </div>
 
                                                 </div>
@@ -201,7 +201,7 @@
                                                 <div class="form-group">
                                                     <label class="control-label">Género<span class="text-danger"> *</span></label>
                                                     <div class="controls">
-                                                        <select name="genero" id="genero" required class="form-control  text-uppercase">
+                                                        <select name="genero" id="genero" required class="form-control ">
                                                             <?php foreach (['F', 'M'] as $key => $value) : ?>
                                                                 <option value="<?= $value ?>" <?= isset($inscripcion['genero']) ? ($inscripcion['genero'] == $value ?  'selected' : '') : ''; ?>><?= $value ?></option>
                                                             <?php endforeach ?>
@@ -259,7 +259,7 @@
                                                 <div class="form-group">
                                                     <label class="control-label">Ciudad donde vive<span class="text-danger"> *</span></label>
                                                     <div class="controls">
-                                                        <select name="ciudad_donde_vive" id="ciudad_donde_vive" required class="form-control  text-uppercase select2">
+                                                        <select name="ciudad_donde_vive" id="ciudad_donde_vive" required class="form-control  select2">
                                                             <option value="">SELECCIONE LA CUIDAD</option>
                                                             <?php foreach ($ciudades as $key => $value) : ?>
                                                                 <option value="<?= $value['nombre_ciudad'] ?>" <?= isset($inscripcion['ciudad']) ? ($inscripcion['ciudad'] == $value['nombre_ciudad'] ?  'selected' : '') : ''; ?>><?= $value['nombre_ciudad'] ?></option>
@@ -278,9 +278,7 @@
                                                 <div class="form-group">
                                                     <label class="control-label">Dirección donde vive <span class="text-danger"> *</span></label>
                                                     <div class="controls">
-                                                        <div class="controls">
-                                                            <input type="text" name="domicilio" id="domicilio" class="form-control text-uppercase" maxlength="50" required value="<?= isset($inscripcion['domicilio']) ? $inscripcion['domicilio'] : ''; ?>" style="height: 34px;">
-                                                        </div>
+                                                        <input type="text" name="domicilio" id="domicilio" class="form-control" maxlength="50" required value="<?= isset($inscripcion['domicilio']) ? $inscripcion['domicilio'] : ''; ?>" style="height: 34px;">
                                                     </div>
                                                 </div>
                                             </div>
@@ -289,7 +287,7 @@
                                                 <div class="form-group">
                                                     <label class="control-label">Estado Civil<span class="text-danger"> *</span></label>
                                                     <div class="controls">
-                                                        <select name="estado_civil" id="estado_civil" required class="form-control  text-uppercase">
+                                                        <select name="estado_civil" id="estado_civil" required class="form-control ">
                                                             <option value=""></option>
                                                             <?php foreach (['SOLTERO', 'CASADO', 'DIVORCIADO', 'VIUDO', 'CONVIVIENTE', 'SOLTERA'] as $key => $value) : ?>
                                                                 <option value="<?= $value ?>" <?= isset($inscripcion['estado_civil']) ? ($inscripcion['estado_civil'] == $value ?  'selected' : '') : ''; ?>><?= $value ?></option>
@@ -307,9 +305,7 @@
                                                 <div class="form-group">
                                                     <label class="control-label">Ocupación actual<span class="text-danger"> *</span></label>
                                                     <div class="controls">
-                                                        <div class="controls">
-                                                            <input type="text" name="oficio_trabajo" id="oficio_trabajo" class="form-control  texto-varios-espacios-inputmask text-uppercase" maxlength="50" required value="<?= isset($inscripcion['oficio_trabajo']) ? $inscripcion['oficio_trabajo'] : '' ?>" style="height: 34px;">
-                                                        </div>
+                                                        <input type="text" name="oficio_trabajo" id="oficio_trabajo" class="form-control" maxlength="50" required value="<?= isset($inscripcion['oficio_trabajo']) ? $inscripcion['oficio_trabajo'] : '' ?>" style="height: 34px;">
                                                     </div>
                                                 </div>
                                             </div>
@@ -342,9 +338,9 @@
                                         <p>Toma una Fotograf&iacute;a o carga una imagen de tu Diploma Acad&eacute;mico.</p>
                                         <div class="row">
                                             <div class="col-md-12 text-center">
-                                                <div class="multimedia-diploma-academico alert alert-warning" data-tamano-archivo="10" data-tamano-archivos-total="20" data-tipos=".doc, .docx, .pdf, .png, .jpeg, .jpg">
+                                                <div class="multimedia-diploma-academico alert alert-warning" data-tamano-archivo="10" data-tamano-archivos-total="20" data-tipos=".png, .jpeg, .jpg, .PNG, .JPEG, .JPG">
                                                     <div id="multimedia-diploma-academico-agregar">
-                                                        <input type="file" id="multimedia_diploma_academico" class="inputfile" accept=".doc, .docx, .pdf, .png, .jpeg, .jpg" />
+                                                        <input type="file" id="multimedia_diploma_academico" class="inputfile" accept=".png, .jpeg, .jpg, .PNG, .JPEG, .JPG" />
                                                         <label class="label-multimedia" for="multimedia_diploma_academico">
                                                             <ul class="list-group">
                                                                 <li id="elemento_dropzone text-center" class="list-group-item d-flex justify-content-center bounce animated" style="cursor:pointer; cursor: hand; border: 3px dotted; border-radius: 8px">
@@ -379,9 +375,9 @@
                                             <h4 class="h4">Registre su Dep&oacute;sito de Matr&iacute;cula Bs. <?= $publicacion_detalle['monto_matricula'] ?><span class="text-danger"> *</span></h4>
                                             <p>Toma una Fotograf&iacute;a o carga una imagen de tu Dep&oacute;sito de matr&iacute;cula.</p>
                                             <div class="col-md-12 text-center">
-                                                <div class="multimedia-matricula alert alert-warning" data-tamano-archivo="10" data-tamano-archivos-total="20" data-tipos=".doc, .docx, .pdf, .png, .jpeg, .jpg">
+                                                <div class="multimedia-matricula alert alert-warning" data-tamano-archivo="10" data-tamano-archivos-total="20" data-tipos=".png, .jpeg, .jpg, .PNG, .JPEG, .JPG">
                                                     <div id="multimedia-matricula-agregar">
-                                                        <input type="file" id="multimedia_matricula" class="inputfile" accept=".doc, .docx, .pdf, .png, .jpeg, .jpg" />
+                                                        <input type="file" id="multimedia_matricula" class="inputfile" accept=".png, .jpeg, .jpg, .PNG, .JPEG, .JPG" />
                                                         <label class="label-multimedia" for="multimedia_matricula">
                                                             <ul class="list-group">
                                                                 <li id="elemento_dropzone text-center" class="list-group-item d-flex justify-content-center bounce animated" style="cursor:pointer; cursor: hand; border: 3px dotted; border-radius: 8px">
@@ -405,9 +401,9 @@
                                             <p>Toma una Fotograf&iacute;a o carga una imagen de tu Dep&oacute;sito por colegiatura.</p>
                                             <div class="row m-t-20">
                                                 <div class="col-md-12 text-center">
-                                                    <div class="multimedia-colegiatura alert alert-warning" data-tamano-archivo="10" data-tamano-archivos-total="20" data-tipos=".doc, .docx, .pdf, .png, .jpeg, .jpg">
+                                                    <div class="multimedia-colegiatura alert alert-warning" data-tamano-archivo="10" data-tamano-archivos-total="20" data-tipos=".png, .jpeg, .jpg, .PNG, .JPEG, .JPG">
                                                         <div id="multimedia-colegiatura-agregar">
-                                                            <input type="file" id="multimedia_colegiatura" class="inputfile" accept=".doc, .docx, .pdf, .png, .jpeg, .jpg" />
+                                                            <input type="file" id="multimedia_colegiatura" class="inputfile" accept=".png, .jpeg, .jpg, .PNG, .JPEG, .JPG" />
                                                             <label class="label-multimedia" for="multimedia_colegiatura">
                                                                 <ul class="list-group">
                                                                     <li id="elemento_dropzone text-center" class="list-group-item d-flex justify-content-center bounce animated" style="cursor:pointer; cursor: hand; border: 3px dotted; border-radius: 8px">
@@ -457,6 +453,100 @@
                 </button>
             </div>
             <div id="detalle-programa-body" class="modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-deposito" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div id="modal-deposito-dialog" class="modal-dialog">
+        <div id="modal-deposito-content" class="modal-content">
+            <div id="modal-deposito-header" class="modal-header">
+                <h4 id="modal-deposito-title" class="modal-title">Detalles del Deposito</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div id="modal-deposito-body" class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12 col-xl-12 col-md-12">
+                        <div id="imagen-deposito" style="cursor:pointer">
+                            <ul class="pictures">
+                                <img id="respaldo-deposito" style="width: 100%; height: 100%;">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-12 col-xl-12 col-md-12">
+                        <div class=" form-group">
+                            <label class="control-label">Fecha de Dep&oacute;sito <span class="text-danger"> *</span></label>
+                            <div class="row" id="fecha">
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="controls">
+                                        <select id="anio" required class="form-control">
+                                            <option value="">AÑO</option>
+                                            <?php for ($i = intval(date('Y')); $i >= intval(date('Y')); $i--) : ?>
+                                                <option value="<?= $i; ?>"><?= $i; ?></option>
+                                            <?php endfor; ?>
+                                        </select>
+                                        <div class="help-block"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="controls">
+                                        <select id="mes" required class="form-control" disabled>
+                                            <option value="">MES</option>
+                                            <?php for ($i = 1; $i <= 12; $i++) : ?>
+                                                <option value="<?= $i; ?>"><?= mes_literal($i); ?></option>
+                                            <?php endfor; ?>
+                                        </select>
+                                        <div class="help-block"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="controls">
+                                        <select id="dia" required class="form-control" disabled>
+                                            <option value="">D&Iacute;A</option>
+                                            <?php for ($i = 1; $i <= 31; $i++) : ?>
+                                                <option value="<?= $i; ?>"><?= $i; ?></option>
+                                            <?php endfor; ?>
+                                        </select>
+                                        <div class="help-block"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="control-label">Numero Deposito<span class="text-danger"> *</span></label>
+                            <div class="controls">
+                                <input type="text" id="numero_deposito" class="form-control numero-deposito" maxlength="50" required="" value="" style="height: 34px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="control-label">Monto Deposito<span class="text-danger"> *</span></label>
+                            <div class="controls">
+                                <input type="text" id="monto_deposito" class="form-control monto-deposito" maxlength="50" required="" value="" style="height: 34px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="modal-deposito-footer" class="modal-footer">
+                <button type="button" id="guardar-deposito" class="btn btn-rounded btn-block" style="height: 34px;">
+                    <i class="fa fa-check-circle"></i> ACEPTAR
+                </button>
+                <a type="button" class="btn btn-rounded btn-block" data-dismiss="modal" style="height: 34px;">
+                    <i class="fa fa-times-circle"></i> CANCELAR
+                </a>
             </div>
         </div>
     </div>

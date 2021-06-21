@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="<?= base_url('theme_admin/assets/plugins/sweetalert/sweetalert.css') ?>">
     <link rel="stylesheet" href="<?= base_url('theme/stylesheets/viewer.min.css') ?>">
     <link rel="stylesheet" href="<?= base_url('theme_admin/assets/plugins/toast-master/css/jquery.toast.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('theme_admin/assets/plugins/select2/dist/css/select2.min.css') ?>">
 
 
 
@@ -161,12 +162,14 @@
     <script type="text/javascript" src="<?= base_url('theme/revolution/js/extensions/revolution.extension.parallax.min.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('theme/revolution/js/extensions/revolution.extension.slideanims.min.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('theme/revolution/js/extensions/revolution.extension.video.min.js') ?>"></script>
+    <script src="<?= base_url('assets/js/psg_oferta.js') ?>"></script>
 
     <script type="text/javascript" src="<?= base_url('theme/javascript/inputmask/dist/min/jquery.inputmask.bundle.min.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('theme/javascript/validation.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('theme_admin/assets/plugins/sweetalert/sweetalert.min.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('theme/javascript/viewer.min.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('theme_admin/assets/plugins/toast-master/js/jquery.toast.js') ?>"></script>
+    <script type="text/javascript" src="<?= base_url('theme_admin/assets/plugins/select2/dist/js/select2.full.min.js') ?>"></script>
 
     <script type="text/javascript" src="<?= base_url('theme/javascript/datejs/build/date-es-BO.js') ?>"></script>
     <?php $js = str_replace('\\', '/', FCPATH . 'assets/js/layout/' . strtolower(explode('\\', (\Config\Services::router())->controllerName())[3]) . '/' . (\Config\Services::router())->methodName() . '.js');
