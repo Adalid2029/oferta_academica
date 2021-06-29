@@ -333,7 +333,7 @@
                                         </div>
 
                                         <hr>
-                                        <h3>FORMACIÓN ACAD&Eacute;MICA</h3>
+                                        <!-- <h3>FORMACIÓN ACAD&Eacute;MICA</h3>
                                         <label class="control-label">Respaldo de Diploma Academico <span class="text-danger"> *</span></label>
                                         <p>Toma una Fotograf&iacute;a o carga una imagen de tu Diploma Acad&eacute;mico.</p>
                                         <div class="row">
@@ -356,7 +356,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
 
                                         <hr>
                                         <div class="row">

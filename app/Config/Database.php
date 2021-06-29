@@ -35,7 +35,7 @@ class Database extends Config
 		'hostname' => 'localhost',
 		'username' => 'postgres',
 		'password' => 'postgres',
-		'database' => 'psg_upea',
+		'database' => 'psg_upea1',
 		'DBDriver' => 'postgre',
 		'DBPrefix' => 'psg_',
 		'pConnect' => false,

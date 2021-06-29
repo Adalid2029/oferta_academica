@@ -54,7 +54,7 @@ $(document).ready(function () {
 				tamanoTotal = Math.round((tamanoTotalArchivos(multimedia_matricula) + e.target.files[0].size / 1000000) * 100) / 100;
 				if (multimedia_matricula.length < cantidadMaximaAdjuntoArchivos) {
 					if (tamanoTotal <= tamanoMaximoSubida) {
-						abrirModal('#modal-deposito', 'Datos del Comprobante de Pago', 'modal-lg', true, 'static');
+						abrirModal('#modal-deposito', 'Datos del Comprobante de Pago', 'modal-lg', false, 'static');
 						vaciarFormularioDeposito();
 						$('#guardar-deposito').click(function () {
 							seGuardo = guardarDeposito(multimedia_matricula, archivo, `${$('#anio').val()}/${$('#mes').val()}/${$('#dia').val()}`, $('#numero_deposito').val(), $('#monto_deposito').val());
@@ -101,7 +101,7 @@ $(document).ready(function () {
 				tamanoTotal = Math.round((tamanoTotalArchivos(multimedia_colegiatura) + e.target.files[0].size / 1000000) * 100) / 100;
 				if (multimedia_colegiatura.length < cantidadMaximaAdjuntoArchivos) {
 					if (tamanoTotal <= tamanoMaximoSubida) {
-						abrirModal('#modal-deposito', 'Datos del Comprobante de Pago', 'modal-lg', true, 'static');
+						abrirModal('#modal-deposito', 'Datos del Comprobante de Pago', 'modal-lg', false, 'static');
 						vaciarFormularioDeposito();
 						$('#guardar-deposito').click(function () {
 							seGuardo = guardarDeposito(multimedia_colegiatura, archivo, `${$('#anio').val()}/${$('#mes').val()}/${$('#dia').val()}`, $('#numero_deposito').val(), $('#monto_deposito').val());
@@ -125,10 +125,6 @@ $(document).ready(function () {
 								zIndex: 9999999,
 							});
 						});
-
-						// multimedia_colegiatura.push(archivo);
-						// listarArchivos(multimedia_colegiatura, tamanoMaximoSubida, 'multimedia-colegiatura-listar', 'multimedia-colegiatura-eliminar', 'multimedia-colegiatura-tamano-total');
-						// actualizarTamanoTotalArchivos($('#multimedia-colegiatura-tamano-total'), tamanoTotal, tamanoMaximoSubida, multimedia_colegiatura);
 					} else swal({ html: true, title: 'INFORMACIÓN', text: `No puede adicionar más Archivos, excede el tamaño máximo de envió ${tamanoMaximoSubida} MB`, type: 'error' });
 				} else {
 					swal({ html: true, title: 'INFORMACIÓN', text: `No puede adicionar más Archivos, excede la cantidad máximo de envió`, type: 'error' });
@@ -196,11 +192,11 @@ $(document).ready(function () {
 	function listarArchivos(archivos, tamanoMaximoSubida, elementoListar, elementoEliminar, elementoTamanoTotal) {
 		var archivos_html = '';
 		$.each(archivos.reverse(), function (i, file) {
-			console.log(file, i);
+			// console.log(file, i);
 			extension = /[.]/.exec(file[0].name) ? /[^.]+$/.exec(file[0].name) : undefined;
 			archivos_html += `<li class="list-group-item justify-content-between align-items-center text-center">
 				<div class="row">
-					<div class="col-lg-5">
+					<div class="col-lg-3">
 						<p class="p-multimedia small" title="${file[0].name}">${file[0].name}</p>
 					</div>
 					<div class="col-lg-2">
@@ -210,9 +206,12 @@ $(document).ready(function () {
 						<p class="p-multimedia small" title="${file[1][1]}">${file[1][1]}</p>
 					</div>
 					
-					<div class="col-lg-2">
-						<a href="#" class="${elementoEliminar}" data-id-eliminar="${i}"> 
-							<i class="fa fa-times-circle-o text-danger" title="Eliminar ${file[0].name}"></i>
+					<div class="col-lg-4">
+						<a href="#" class="btn btn-sm btn-info" data-id-editar="${i}"> 
+							<i class="fa fa-pencil" title="Editar ${file[0].name}"></i> Editar
+						</a>
+						<a href="#" class="btn btn-sm btn-danger ${elementoEliminar}" data-id-eliminar="${i}"> 
+							<i class="fa fa-times-circle-o" title="Eliminar ${file[0].name}"></i> Eliminar
 						</a>
 					</div>
 				</div>
