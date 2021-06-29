@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Posgrado - UPEA</title>
+    <title>POSGRADO - UPEA</title>
 
     <meta name="author" content="themesflat.com">
 
